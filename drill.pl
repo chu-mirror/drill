@@ -4,9 +4,15 @@ use v5.10;
 use Time::Piece;
 use Time::Seconds;
 
+
 my $home = "DRILL_HOME";
+
+if (@ARGV == 0) {
+  exec("vi", "$home/DRILL_DRILLS");
+}
 open DRILLS, "<", "$home/DRILL_DRILLS";
 open NEWDRILLS, ">", "/tmp/drills";
+
 
 my @drills;
 while (<DRILLS>) {
@@ -23,9 +29,6 @@ while (<DRILLS>) {
 foreach (@drills) { $_ = &init($_) }
 
 my $command = shift @ARGV;
-if (!$command) {
-  die "Specify your command!";
-}
 
 if ($command eq "do") {
   my $todo = $drills[0];
@@ -163,7 +166,6 @@ sub done {
   }
   &fmt_drill($topic, $content, $level, $date)
 }
-
 
 sub urgency {
   my ($topic, $content, $level, $date) = &parse_drill($_[0]);
