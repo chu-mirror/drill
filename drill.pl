@@ -45,23 +45,42 @@ if ($command eq "do") {
   } else {
     foreach (@drills) {
       if ($todo eq $_) {
-        &print_drill($todo);
+        &do($todo);
         $_ = &doing($_);
       }
     }
   }
 } elsif ($command eq "done") {
   foreach (@drills) { $_ = &done($_) }
+} elsif ($command eq "hint") {
+  foreach (@drills) {
+    if (&is_doing($_)) {
+      my ($topic, $content, $level, $date) = &parse_drill($_);
+      my ($des, $hint, $ref, $context) = &parse_content($content);
+      if ($hint) {
+        say $hint;
+      } else {
+        say "There's no hint for this drill";
+      }
+    }
+  }
 } else {
   die "Unknown command: $command";
 }
 
 foreach (@drills) {
   my ($topic, $content, $level, $date) = &parse_drill($_);
+  my ($des, $hint, $ref, $context) = &parse_content($content);
   say NEWDRILLS "$topic|";
-  my @lines = split /\n/, &fmt_content(&parse_content($content));
-  foreach (@lines) {
-    say NEWDRILLS "  $_";
+  printf NEWDRILLS "%s\n", &split_text($des, 80, "  ");
+  if ($context) {
+    say NEWDRILLS '  \context: ', $context;
+  }
+  if ($ref) {
+    say NEWDRILLS '  \reference: ', $ref;
+  }
+  if ($hint) {
+    say NEWDRILLS '  \hint: ', $hint;
   }
   say NEWDRILLS "  |$level|$date"
 }
@@ -91,47 +110,58 @@ sub parse_content {
   }
   if ($content =~ m/\\hint:[^\\]*/) {
     $hint = "$&";
+    $hint =~ s/\\[^\:]*:\s*//;
   }
   if ($content =~ m/\\reference:[^\\]*/) {
     $ref = "$&";
+    $ref =~ s/\\[^\:]*:\s*//;
   }
   if ($content =~ m/\\context:[^\\]*/) {
     $context = "$&";
+    $context =~ s/\\[^\:]*:\s*//;
+    $context =~ s/\s*$//;
   }
   ($des, $hint, $ref, $context)
 }
 
-sub fmt_content {
-  my ($des, $hint, $ref, $context) = @_;
-  my @words = split /\s/, $des;
+sub split_text {
+  my @words = split /\s/, (shift @_);
+  my ($len, $prefix) = @_;
 
-  $des = '';
-  my $line = shift @words;
+  $text = '';
+  my $line = $prefix . (shift @words);
   foreach (@words) {
-    if (length($line) + length($_) + 1 <= 80) {
+    if (length($line) + length($_) + 1 <= $len) {
       $line .= " $_";
     } else {
-      $des .= "$line\n";
-      $line = "$_";
+      $text .= "$line\n";
+      $line = "$prefix$_";
     }
   }
-  $des .= "$line";
-  my $content;
-  foreach (($des, $hint, $ref, $context)) {
-    if ($_) {
-      $content .= "$_\n";
-    }
-  }
-  $content
-}
-
-sub print_drill {
-  my ($topic, $content, $level, $date) = &parse_drill($_[0]);
-  printf "Topic: %s\n%s", $topic, &fmt_content(&parse_content($content));
+  $text .= "$line";
+  $text
 }
 
 sub parse_time {
   Time::Piece->strptime($_[0], "%a %b %d %T %Y")
+}
+
+sub do {
+  my ($topic, $content, $level, $date) = &parse_drill($_[0]);
+  my ($des, $hint, $ref, $context) = &parse_content($content);
+  say "Topic: ${topic}";
+  if ($context) {
+    say "Context: ${context}";
+    system("cp", "-r", "-t", ".", "${home}/context/${topic}/${context}");
+  }
+  printf "Description:\n%s\n",  &split_text($des, 80, "  ");
+  if ($ref) {
+    my @refs = split /\s*,\s*/, $ref;
+    printf "Reference:\n" . ("  %s\n" x @refs), @refs;
+  }
+  if ($hint) {
+    say "There is some hints, use 'drill hint' to show them";
+  }
 }
 
 sub init {
