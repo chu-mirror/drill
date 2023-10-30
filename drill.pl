@@ -4,7 +4,6 @@ use v5.10;
 use Time::Piece;
 use Time::Seconds;
 
-
 my $home = "DRILL_HOME";
 
 if (@ARGV == 0) {
@@ -71,6 +70,21 @@ if ($command eq "do") {
       $_ = init("$topic|$content");
     }
   }
+} elsif ($command eq "stat") {
+  my ($new, $old) = (0, 0);
+  foreach (@drills) {
+    my ($topic, $content, $level, $date) = &parse_drill($_);
+    my $t = &parse_time($date);
+    if ($t->date eq localtime->date) {
+      if ($level == 0) {
+        ++$new;
+      } else {
+        ++$old;
+      }
+    }
+  }
+  say "Newly added drills: $new";
+  say "Reviewed drills: $old";
 } else {
   die "Unknown command: $command";
 }
