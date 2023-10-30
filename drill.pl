@@ -64,6 +64,13 @@ if ($command eq "do") {
       }
     }
   }
+} elsif ($command eq "refresh") {
+  foreach (@drills) {
+    if (&is_doing($_)) {
+      my ($topic, $content, $level, $date) = &parse_drill($_);
+      $_ = init("$topic|$content");
+    }
+  }
 } else {
   die "Unknown command: $command";
 }
