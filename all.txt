@@ -1,47 +1,48 @@
 Perl|
   Write a big number literal easy to read, add 1 to it and print the result.
-  |0|Fri Oct 27 15:32:21 2023
+  |1|Mon Oct 30 08:38:31 2023
 Perl|
-  Write a hexadecimal floating-point literal, divide it by 0x10, print the resull.
-  |0|Fri Oct 27 15:32:21 2023
+  Write a hexadecimal floating-point literal, divide it by 0x10, print the
+  resull.
+  |1|Mon Oct 30 08:47:31 2023
 Perl|
   Compute the expression "10.5 % 3.2" by hand, examine the result.
-  |0|Fri Oct 27 15:32:21 2023
+  |1|Mon Oct 30 08:48:11 2023
 Perl|
   Compute the expression "10 / 3" by hand, examine the result.
-  |0|Fri Oct 27 15:32:21 2023
+  |1|Mon Oct 30 08:48:24 2023
 Perl|
   Compute 2 raised to the power of 3, print the result.
-  |0|Fri Oct 27 15:32:21 2023
+  |1|Mon Oct 30 08:48:41 2023
 Perl|
   Find a way to evaluate "print $你好".
-  |0|Fri Oct 27 15:32:21 2023
+  |1|Mon Oct 30 08:49:15 2023
 Perl|
   Print a string with "
-  |0|Fri Oct 27 15:32:21 2023
+  |1|Mon Oct 30 08:49:36 2023
 Perl|
   Concatenate some strings.
-  |0|Fri Oct 27 15:32:21 2023
+  |1|Mon Oct 30 08:49:56 2023
 Perl|
   Print "999999999" (try to find a way easier than to print it directlty).
-  |0|Fri Oct 27 15:32:21 2023
+  |1|Mon Oct 30 08:50:25 2023
 Perl|
   Use a pragma to turn on warnings, evaluate "'12x' * 3" to examine the effect.
-  |0|Fri Oct 27 15:32:21 2023
+  |1|Mon Oct 30 08:52:21 2023
 Perl|
   Use a command line option to turn on warnings, evaluate "'12x' * 3" to examine
   the effect.
-  |0|Fri Oct 27 15:32:21 2023
+  |1|Mon Oct 30 08:53:01 2023
 Perl|
   Use a pragma to turn on description for warnings, evaluate "'12x' * 3" to
   examine the effect.
   \hint: diagnostics
-  |0|Fri Oct 27 15:32:21 2023
+  |1|Mon Oct 30 08:53:45 2023
 Perl|
   Use a command line option to set pragma to turn on descriptions for warnings,
   evaluate "'12x' * 3" to examine the effect.
   \hint: diagnostics
-  |0|Fri Oct 27 15:32:21 2023
+  |1|Mon Oct 30 08:54:54 2023
 Perl|
   Convert strings "0xF", "017", "0b1111" to numbers with corresponding bases.
   |0|Fri Oct 27 15:32:21 2023
@@ -58,17 +59,17 @@ Perl|
   Print the code point of "あ" (it's bigger than 255).
   |0|Fri Oct 27 15:32:21 2023
 Perl|
-  Give the operators let the comparison between "abc" and "cba" return true, there
-  are at least two such operators.
+  Give the operators let the comparison between "abc" and "cba" return true,
+  there are at least two such operators.
   |0|Fri Oct 27 15:32:21 2023
 Perl|
   Convert a value to the default representation of True or False in Perl, for
-  example, convert "Yes" to "1", convert "0" to "" (the default representation is
-  not unchanged).
+  example, convert "Yes" to "1", convert "0" to "" (the default representation
+  is not unchanged).
   |0|Fri Oct 27 15:32:21 2023
 Perl|
-  Read two numbers from user's input, compute their sum and print it, the numbers
-  are seperated by newline.
+  Read two numbers from user's input, compute their sum and print it, the
+  numbers are seperated by newline.
   |0|Fri Oct 27 15:32:21 2023
 Perl|
   Remove the ending newline from a string.
@@ -149,7 +150,8 @@ Perl|
   Use subroutine signature to define a subroutine that add two numbers together.
   |0|Fri Oct 27 15:32:21 2023
 Perl|
-  Read input and print it line by line, consider using Larry shortcut of "while".
+  Read input and print it line by line, consider using Larry shortcut of
+  "while".
   |0|Fri Oct 27 15:32:21 2023
 Perl|
   Write a simple cat.
@@ -163,8 +165,8 @@ Perl|
   Use diamond operation to read files specified in source code.
   |0|Fri Oct 27 15:32:21 2023
 Perl|
-  Print number 16 as hexadecimal and octal, take A and B field width respectively,
-  A and B are varaibles.
+  Print number 16 as hexadecimal and octal, take A and B field width
+  respectively, A and B are varaibles.
   \hint: printf
   |0|Fri Oct 27 15:32:21 2023
 Perl|
@@ -230,3 +232,16 @@ Perl|
   Find all lines containing continuous same characters in file "perlre.txt".
   \context: regex
   |0|Fri Oct 27 15:32:21 2023
+Bash|
+  Add some shortcuts for some directories so that "cd" can easily go there.
+  |0|Sat Oct 28 11:10:28 2023
+C++|
+  Write "int a = 2.7;" in another way that will be prevented by compiler.
+  \context: template
+  \hint: list-initialization
+  |0|Sun Oct 29 16:32:09 2023
+C++|
+  Write "char a = 1000;" in another way that will be prevented by compiler.
+  \context: template
+  \hint: list-initialization
+  |0|Sun Oct 29 17:20:28 2023
