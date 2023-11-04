@@ -95,13 +95,13 @@ foreach (@drills) {
   say NEWDRILLS "$topic|";
   printf NEWDRILLS "%s\n", &split_text($des, 80, "  ");
   if ($context) {
-    say NEWDRILLS '  \context: ', $context;
+    say NEWDRILLS '  \context ', $context;
   }
   if ($ref) {
-    say NEWDRILLS '  \reference: ', $ref;
+    say NEWDRILLS '  \reference ', $ref;
   }
   if ($hint) {
-    say NEWDRILLS '  \hint: ', $hint;
+    say NEWDRILLS '  \hint ', $hint;
   }
   say NEWDRILLS "  |$level|$date"
 }
@@ -129,17 +129,17 @@ sub parse_content {
   if ($content =~ m/[^\\]*/) {
     $des = "$&";
   }
-  if ($content =~ m/\\hint:[^\\]*/) {
+  if ($content =~ m/\\hint[^\\]*/) {
     $hint = "$&";
-    $hint =~ s/\\[^\:]*:\s*//;
+    $hint =~ s/\\\w*\s*//;
   }
-  if ($content =~ m/\\reference:[^\\]*/) {
+  if ($content =~ m/\\reference[^\\]*/) {
     $ref = "$&";
-    $ref =~ s/\\[^\:]*:\s*//;
+    $ref =~ s/\\\w*\s*//;
   }
-  if ($content =~ m/\\context:[^\\]*/) {
+  if ($content =~ m/\\context[^\\]*/) {
     $context = "$&";
-    $context =~ s/\\[^\:]*:\s*//;
+    $context =~ s/\\\w*\s*//;
     $context =~ s/\s*$//;
   }
   ($des, $hint, $ref, $context)
