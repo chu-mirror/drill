@@ -1,109 +1,109 @@
 Perl|
   Write a big number literal easy to read, add 1 to it and print the result.
-  |1|Mon Oct 30 08:38:31 2023
+  |2|Mon Nov  6 10:20:56 2023
 Perl|
   Write a hexadecimal floating-point literal, divide it by 0x10, print the
   resull.
-  |1|Mon Oct 30 08:47:31 2023
+  |2|Mon Nov  6 10:22:50 2023
 Perl|
   Compute the expression "10.5 % 3.2" by hand, examine the result.
-  |1|Mon Oct 30 08:48:11 2023
+  |2|Mon Nov  6 10:22:57 2023
 Perl|
   Compute the expression "10 / 3" by hand, examine the result.
-  |1|Mon Oct 30 08:48:24 2023
+  |2|Mon Nov  6 10:23:04 2023
 Perl|
   Compute 2 raised to the power of 3, print the result.
-  |1|Mon Oct 30 08:48:41 2023
+  |2|Mon Nov  6 12:14:31 2023
 Perl|
   Find a way to evaluate "print $你好".
-  |1|Mon Oct 30 08:49:15 2023
+  |2|Mon Nov  6 17:22:39 2023
 Perl|
   Print a string with "
-  |1|Mon Oct 30 08:49:36 2023
+  |2|Mon Nov  6 17:22:47 2023
 Perl|
   Concatenate some strings.
-  |1|Mon Oct 30 08:49:56 2023
+  |2|Mon Nov  6 17:22:54 2023
 Perl|
   Print "999999999" (try to find a way easier than to print it directlty).
-  |1|Mon Oct 30 08:50:25 2023
+  |2|Mon Nov  6 17:23:17 2023
 Perl|
   Use a pragma to turn on warnings, evaluate "'12x' * 3" to examine the effect.
-  |1|Mon Oct 30 08:52:21 2023
+  |2|Mon Nov  6 17:23:54 2023
 Perl|
   Use a command line option to turn on warnings, evaluate "'12x' * 3" to examine
   the effect.
-  |1|Mon Oct 30 08:53:01 2023
+  |2|Mon Nov  6 17:23:58 2023
 Perl|
   Use a pragma to turn on description for warnings, evaluate "'12x' * 3" to
   examine the effect.
   \hint diagnostics
-  |1|Mon Oct 30 08:53:45 2023
+  |2|Mon Nov  6 17:24:34 2023
 Perl|
   Use a command line option to set pragma to turn on descriptions for warnings,
   evaluate "'12x' * 3" to examine the effect.
   \hint diagnostics
-  |1|Mon Oct 30 08:54:54 2023
+  |2|Mon Nov  6 17:25:22 2023
 Perl|
   Convert strings "0xF", "017", "0b1111" to numbers with corresponding bases.
   |1|Sat Nov  4 09:33:51 2023
 Perl|
   Convert string "0F" to number.
-  |1|Mon Oct 30 09:09:03 2023
+  |2|Mon Nov  6 17:25:52 2023
 Perl|
   Use "say" to print "Hello".
-  |1|Mon Oct 30 09:09:38 2023
+  |2|Mon Nov  6 17:26:19 2023
 Perl|
   Create a single character with code point "0x05D0".
   |0|Sat Nov  4 09:38:54 2023
 Perl|
   Print the code point of "あ" (it's bigger than 255).
-  |1|Mon Oct 30 09:16:58 2023
+  |2|Mon Nov  6 17:27:00 2023
 Perl|
   Give the operators let the comparison between "abc" and "cba" return true,
   there are at least two such operators.
-  |1|Mon Oct 30 09:18:55 2023
+  |2|Mon Nov  6 17:27:50 2023
 Perl|
   Convert a value to the default representation of True or False in Perl, for
   example, convert "Yes" to "1", convert "0" to "" (the default representation
   is not unchanged).
-  |1|Mon Oct 30 09:20:00 2023
+  |2|Mon Nov  6 17:29:47 2023
 Perl|
   Read two numbers from user's input, compute their sum and print it, the
   numbers are seperated by newline.
-  |1|Mon Oct 30 09:22:57 2023
+  |2|Mon Nov  6 17:30:38 2023
 Perl|
   Remove the ending newline from a string.
-  |1|Mon Oct 30 10:16:06 2023
+  |2|Mon Nov  6 17:31:13 2023
 Perl|
   Make a variable undefined.
-  |1|Mon Oct 30 10:16:34 2023
+  |2|Tue Nov  7 12:13:15 2023
 Perl|
   Create an array containing numbers from 1 to 10, don't use loop.
-  |1|Mon Oct 30 10:17:00 2023
+  |2|Tue Nov  7 12:13:23 2023
 Perl|
   Print the last element in an array, there are at least two ways.
-  |1|Mon Oct 30 10:18:02 2023
+  |2|Tue Nov  7 12:14:06 2023
 Perl|
   Use "qw" to create a list containing the files in current directory.
-  |1|Mon Oct 30 10:18:27 2023
+  |2|Tue Nov  7 12:15:28 2023
 Perl|
   Swap two variables using list assignment.
-  |1|Mon Oct 30 10:19:05 2023
+  |2|Tue Nov  7 12:16:07 2023
 Perl|
   Create a new array by concatenating several lists.
-  |1|Mon Oct 30 10:20:07 2023
+  |2|Tue Nov  7 12:27:50 2023
 Perl|
   Remove the ending element from a list, print the removed element.
-  |1|Mon Oct 30 10:21:16 2023
+  |2|Tue Nov  7 12:28:48 2023
 Perl|
   Add an element to the end of a list.
-  |1|Mon Oct 30 10:21:39 2023
+  |2|Tue Nov  7 12:29:17 2023
 Perl|
   Remove the starting element from a list, print the removed element.
-  |1|Mon Oct 30 10:22:55 2023
+  |2|Tue Nov  7 12:29:59 2023
 Perl|
   Add an element to the start of a list.
-  |1|Mon Oct 30 10:23:34 2023
+  |2|Tue Nov  7 12:30:34 2023
 Perl|
   Replace the 2 to 4 from "(1..10)" with list that contains 4 to 2, print the
   replaced part.
@@ -111,34 +111,34 @@ Perl|
   |0|Sat Nov  4 09:52:06 2023
 Perl|
   Print "Hello, XXX" for a list of names.
-  |1|Mon Oct 30 10:30:58 2023
+  |2|Tue Nov  7 12:32:00 2023
 Perl|
   Print "Hello, guest No. XX, XXX" for a list of names, "XX" is the index of the
   name in that list, there are at least two ways.
   \hint each
-  |1|Mon Oct 30 10:34:52 2023
+  |2|Tue Nov  7 12:35:08 2023
 Perl|
   Print the size of a list.
-  |1|Mon Oct 30 10:35:28 2023
+  |2|Wed Nov  8 16:30:32 2023
 Perl|
   Read all lines from standard input and cut off all ending newline.
-  |1|Mon Oct 30 10:36:23 2023
+  |2|Wed Nov  8 16:30:55 2023
 Perl|
   Write a subroutine that print "Hello".
-  |1|Mon Oct 30 13:16:11 2023
+  |2|Wed Nov  8 16:31:34 2023
 Perl|
   Write a subroutine that return the max among its argument list, don't assume
   that the arguments are all positives.
-  |1|Mon Oct 30 13:19:12 2023
+  |2|Wed Nov  8 16:32:04 2023
 Perl|
   Consider a way to initialize local variables from the argument list, do it in
   one line of code.
-  |1|Mon Oct 30 13:45:49 2023
+  |2|Wed Nov  8 16:32:19 2023
 Perl|
   Make all using of undeclared variables illegal by compiler, there are at least
   two ways.
   \hint strict
-  |1|Tue Oct 31 09:34:30 2023
+  |0|Fri Nov 10 13:45:43 2023
 Perl|
   Write a subroutine that each invocation while make the returned value
   incremented by 1, don't use global variables.
@@ -150,26 +150,26 @@ Perl|
 Perl|
   Read input and print it line by line, consider using Larry shortcut of
   "while".
-  |1|Tue Oct 31 09:42:59 2023
+  |2|Fri Nov 10 13:46:40 2023
 Perl|
   Write a simple cat.
   \hint diamond
-  |1|Tue Oct 31 09:43:39 2023
+  |2|Fri Nov 10 13:47:16 2023
 Perl|
   Write a simple echo.
   \hint ARGV
-  |1|Tue Oct 31 09:44:34 2023
+  |2|Fri Nov 10 13:47:44 2023
 Perl|
   Use diamond operation to read files specified in source code.
-  |1|Tue Oct 31 09:47:01 2023
+  |2|Fri Nov 10 13:48:27 2023
 Perl|
   Print number 16 as hexadecimal and octal, take A and B field width
   respectively, A and B are varaibles.
   \hint printf
-  |1|Tue Oct 31 13:12:24 2023
+  |2|Fri Nov 10 13:50:01 2023
 Perl|
   Write a simple cp.
-  |1|Tue Oct 31 13:24:05 2023
+  |2|Fri Nov 10 13:52:08 2023
 Perl|
   Write a simple cp, use file handlers in scalars.
   \hint "{}"
