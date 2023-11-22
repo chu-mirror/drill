@@ -45,7 +45,7 @@ Perl|
   |2|Mon Nov  6 17:25:22 2023
 Perl|
   Convert strings "0xF", "017", "0b1111" to numbers with corresponding bases.
-  |1|Sat Nov  4 09:33:51 2023
+  |2|Sat Nov 18 15:43:12 2023
 Perl|
   Convert string "0F" to number.
   |2|Mon Nov  6 17:25:52 2023
@@ -54,7 +54,7 @@ Perl|
   |2|Mon Nov  6 17:26:19 2023
 Perl|
   Create a single character with code point "0x05D0".
-  |0|Sat Nov  4 09:38:54 2023
+  |1|Fri Nov 17 09:17:45 2023
 Perl|
   Print the code point of "あ" (it's bigger than 255).
   |2|Mon Nov  6 17:27:00 2023
@@ -108,7 +108,7 @@ Perl|
   Replace the 2 to 4 from "(1..10)" with list that contains 4 to 2, print the
   replaced part.
   \hint splice
-  |0|Sat Nov  4 09:52:06 2023
+  |1|Fri Nov 17 09:20:30 2023
 Perl|
   Print "Hello, XXX" for a list of names.
   |2|Tue Nov  7 12:32:00 2023
@@ -138,15 +138,15 @@ Perl|
   Make all using of undeclared variables illegal by compiler, there are at least
   two ways.
   \hint strict
-  |0|Fri Nov 10 13:45:43 2023
+  |1|Mon Nov 20 20:37:21 2023
 Perl|
   Write a subroutine that each invocation while make the returned value
   incremented by 1, don't use global variables.
   \hint state
-  |1|Sat Nov  4 09:54:59 2023
+  |2|Sat Nov 18 15:44:37 2023
 Perl|
   Use subroutine signature to define a subroutine that add two numbers together.
-  |1|Sat Nov  4 09:58:15 2023
+  |0|Mon Nov 20 20:30:31 2023
 Perl|
   Read input and print it line by line, consider using Larry shortcut of
   "while".
@@ -173,86 +173,131 @@ Perl|
 Perl|
   Write a simple cp, use file handlers in scalars.
   \hint "{}"
-  |1|Sat Nov  4 10:01:14 2023
+  |2|Mon Nov 20 20:32:30 2023
 Perl|
   Read lines from a file encoded in UTF-8.
-  |1|Sat Nov  4 10:01:35 2023
+  |2|Mon Nov 20 20:35:45 2023
 Perl|
   Read lines from a file nonexistent to triggle an error and handle it.
   \hint autodie, die
-  |1|Tue Oct 31 13:36:50 2023
+  |0|Mon Nov 20 20:39:58 2023
 Perl|
   Write something to a file at different places in source code, make sure all
   output flushed immediately.
-  \hint select
-  |0|Sat Nov  4 10:06:20 2023
+  \hint flush, autoflush
+  |0|Mon Nov 20 20:41:46 2023
 Perl|
   Read a line of text from file "input", or if failed, read from standard input.
   \hint or
-  |1|Tue Oct 31 13:45:22 2023
+  |2|Fri Nov 17 09:12:29 2023
 Perl|
   Create a hash table from list "('Chu', 1, 'Maeda', 2)", write the list in a
   good-looking way.
-  |1|Tue Oct 31 13:46:36 2023
+  |2|Fri Nov 17 09:15:00 2023
 Perl|
   Check whether a hash table has an item of a certain key, a sample hash table
   is provided in "hash-sample.pl".
   \context hash
   \hint exists
-  |0|Sat Nov  4 10:11:33 2023
+  |1|Fri Nov 17 09:47:08 2023
 Perl|
   Store all keys from a hash table in an array, a sample hash table is provided
   in "hash-sample.pl".
   \context hash
-  |1|Wed Nov  1 10:02:29 2023
+  |2|Fri Nov 17 09:23:51 2023
 Perl|
   Store all values from a hash table in an array, a sample hash table is
   provided in "hash-sample.pl".
   \context hash
-  |1|Wed Nov  1 10:03:06 2023
+  |2|Fri Nov 17 09:25:46 2023
 Perl|
   Print environment variable PATH.
   \hint %ENV
-  |1|Wed Nov  1 10:04:42 2023
+  |2|Fri Nov 17 09:26:17 2023
 Perl|
   Find all lines containing "Regular" in file "perlre.txt".
   \context regex
-  |1|Sat Nov  4 09:24:16 2023
+  |2|Fri Nov 17 09:48:43 2023
 Perl|
   Find all head lines in file "perlre.txt".
   \context regex
-  |1|Sat Nov  4 09:25:49 2023
+  |2|Sat Nov 18 15:37:59 2023
 Perl|
   Find all lines containing sequence that repeats "." more than 3 times in file
   "perlre.txt".
   \context regex
-  |1|Sat Nov  4 09:26:42 2023
+  |2|Sat Nov 18 15:39:16 2023
 Perl|
   Find all lines containing numbers from 5 to 9 in file "perlre.txt".
   \context regex
-  |1|Sat Nov  4 09:27:51 2023
+  |2|Sat Nov 18 15:39:36 2023
 Perl|
   Find all lines containing either "regex" or "regular expression" in file
   "perlre.txt".
   \context regex
-  |1|Sat Nov  4 09:28:41 2023
+  |2|Sat Nov 18 15:39:56 2023
 Perl|
   Find all lines containing continuous same characters in file "perlre.txt".
   \context regex
-  |1|Sat Nov  4 09:29:46 2023
+  |2|Sat Nov 18 15:41:15 2023
 Bash|
   Add some shortcuts for some directories so that "cd" can easily go there.
-  |1|Sat Nov  4 09:30:35 2023
+  |2|Sat Nov 18 15:41:29 2023
 C++|
   Write "int a = 2.7;" in another way that will be prevented by compiler.
   \context template
   \hint list-initialization
-  |1|Sat Nov  4 09:31:56 2023
+  |2|Sat Nov 18 15:42:02 2023
 C++|
   Write "char a = 1000;" in another way that will be prevented by compiler.
   \context template
   \hint list-initialization
-  |1|Sat Nov  4 09:32:23 2023
+  |2|Sat Nov 18 15:42:17 2023
 C++|
   Tell the difference between "type(value)" and "type{value}".
-  |1|Sat Nov  4 09:52:20 2023
+  |2|Sat Nov 18 15:43:24 2023
+Pandoc|
+  Seperate paragraphs without blank lines.
+  |1|Mon Nov 20 20:37:36 2023
+Pandoc|
+  Embed a code block using backticks, declare the programming language.
+  |1|Mon Nov 20 20:39:07 2023
+Perl|
+  Use "die" but do not append file name and line number to the message.
+  |1|Mon Nov 20 20:40:32 2023
+CMake|
+  Specify the generator by command line option.
+  \context sample-project
+  \hint -G
+  |1|Mon Nov 20 20:42:48 2023
+CMake|
+  Define a variable of multi-line content.
+  \context empty-project
+  \hint [=[
+  |1|Mon Nov 20 20:44:58 2023
+CMake|
+  Log the accessing and modifying of a variable.
+  \context empty-project
+  \hint variable_watch
+  |0|Fri Nov 17 13:56:36 2023
+CMake|
+  Search for sub-string in a string, sample data is given in "CMakeLists.txt".
+  \context cmake-string
+  \hint FIND
+  |0|Fri Nov 17 13:56:36 2023
+CMake|
+  Replace a sub-string in a string with another string, sample data is given in
+  "CMakeLists.txt".
+  \context cmake-string
+  \hint REPLACE
+  |0|Fri Nov 17 13:56:36 2023
+CMake|
+  Replace "abc" or "df" by "X" in str1.
+  \context cmake-string
+  \hint REGEX
+  |0|Fri Nov 17 14:17:31 2023
+CMake|
+  Get the last item from a list.
+  \context cmake-list
+  \hint GET LENGTH math
+  |0|Fri Nov 17 14:17:31 2023
