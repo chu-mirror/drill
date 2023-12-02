@@ -279,7 +279,7 @@ CMake|
   Log the accessing and modifying of a variable.
   \context empty-project
   \hint variable_watch
-  |0|Fri Nov 17 13:56:36 2023
+  |0*|Fri Nov 17 13:56:36 2023
 CMake|
   Search for sub-string in a string, sample data is given in "CMakeLists.txt".
   \context cmake-string
@@ -301,3 +301,19 @@ CMake|
   \context cmake-list
   \hint GET LENGTH math
   |0|Fri Nov 17 14:17:31 2023
+Vim|
+  Tell the functions of CTRL-U, CTRL-D, CTRL-Y, CTRL-E, CTRL-F, CTRL-B in normal
+  mode.
+  |0|Sat Dec  2 13:10:58 2023
+Vim|
+  Tell what 'o' functions in visual mode.
+  |0|Sat Dec  2 13:10:58 2023
+Vim|
+  Tell what "daw" do when in normal mode.
+  |0|Sat Dec  2 13:10:58 2023
+Vim|
+  Tell what "dis" and "das" do when in normal mode.
+  |0|Sat Dec  2 13:10:58 2023
+Vim|
+  Open the help page for text objects.
+  |0|Sat Dec  2 13:10:58 2023

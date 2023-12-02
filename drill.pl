@@ -1,6 +1,6 @@
 `#'!DRILL_PERL_BIN -w
 use utf8;
-use v5.10;
+use v5.34;
 use Time::Piece;
 use Time::Seconds;
 
@@ -33,7 +33,7 @@ if ($command eq "do") {
   my $todo = $drills[0];
   foreach (@drills) {
     if (&is_doing($_)) {
-      die "You are already in doing a drill";
+      die "You are already in doing a drill\n";
     }
     if (&urgency($todo) < &urgency($_)) {
       $todo = $_;
@@ -86,7 +86,7 @@ if ($command eq "do") {
   say "Newly added drills: $new";
   say "Reviewed drills: $old";
 } else {
-  die "Unknown command: $command";
+  die "Unknown command: $command\n";
 }
 
 foreach (@drills) {
