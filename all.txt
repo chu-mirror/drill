@@ -15,7 +15,7 @@ Perl|
   Compute 2 raised to the power of 3, print the result.
   |2|Mon Nov  6 12:14:31 2023
 Perl|
-  Find a way to evaluate "print $你好".
+  Find a way to evaluate "print $� 好".
   |2|Mon Nov  6 17:22:39 2023
 Perl|
   Print a string with "
@@ -279,12 +279,12 @@ CMake|
   Log the accessing and modifying of a variable.
   \context empty-project
   \hint variable_watch
-  |0*|Fri Nov 17 13:56:36 2023
+  |0|Wed Dec  6 14:59:51 2023
 CMake|
   Search for sub-string in a string, sample data is given in "CMakeLists.txt".
   \context cmake-string
   \hint FIND
-  |0|Fri Nov 17 13:56:36 2023
+  |0|Wed Dec  6 15:02:08 2023
 CMake|
   Replace a sub-string in a string with another string, sample data is given in
   "CMakeLists.txt".
@@ -317,3 +317,6 @@ Vim|
 Vim|
   Open the help page for text objects.
   |0|Sat Dec  2 13:10:58 2023
+C++|
+  How to refer a definition in the global namespace?
+  |0|Wed Dec  6 14:59:10 2023
