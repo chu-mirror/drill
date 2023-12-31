@@ -149,7 +149,7 @@ sub split_text {
   my @words = split /\s/, (shift @_);
   my ($len, $prefix) = @_;
 
-  $text = '';
+  my $text = '';
   my $line = $prefix . (shift @words);
   foreach (@words) {
     if (length($line) + length($_) + 1 <= $len) {
